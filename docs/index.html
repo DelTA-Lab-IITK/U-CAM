@@ -1,250 +1,389 @@
 
-<!--<html class="gr__filebox_ece_vt_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">-->
+<html class="gr__filebox_ece_vt_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<style>
+	body {
+		background: white;
+		color: #222222;
+		padding: 0;
+		margin: 0;
+		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1.4;
+   }
+	a:link {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a:active {
+		text-decoration: underline;
+	}
+	p{
+		font-size:1.2em;
+	}
+	img {
+		width:100%;
+		max-width: 300px;
+	}
+	.rcorner{
+		border-radius: 25px;
+		border: 2px solid #8AC007;
+		padding: 20px;
+	}
+	div{
+		max-width:1200px;
+		position:relative;
+		font-family: Arial;
+	}
+	.bold{font-weight: bold;}
+	.italic{font-style: italic;}
+	.sz25{font-size:2.5em;}
+	.sz20{font-size:1.5em;}
+	.sz15{font-size:1.5em;}
+	.sz13{font-size:1.3em;}
+	.sz12{font-size:1.2em;}
+	.sz10{font-size:1.0em;}
+	.sz08{font-size:0.8em;}
+	.inline{display:inline-block;}
+	.no_margin{
+		margin: 0 0;
+	}
+	.padding20{
+		padding: 0px;
+	}
+	/*.halign{*/
+	/*	margin-left: auto;*/
+	/*	margin-right: auto;*/
+	/*}*/
+	.block_2
+	{
+		width:49%;
+		max-width: 512px;
+		display: inline-block;
+		position: relative;
+	}
+	.block_5_2
+	{
+		width:40%;
+		max-width: 410px;
+		display: inline-block;
+		position: relative;
+	}
+	.block_3
+	{
+		width:33%;
+		max_width: 341px;
+		display: inline-block;
+		position: relative;
+	}
+	.block_1
+	{
+		width:100%;
+		display: inline-block;
+		/*position: relative;*/
+		/*margin: 5px 5px;*/
+		text-align: justify;
 
-<!--	<style>-->
-<!--	body {-->
-<!--		background: white;-->
-<!--		color: #222222;-->
-<!--		padding: 0;-->
-<!--		margin: 0;-->
-<!--		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;-->
-<!--		font-weight: normal;-->
-<!--		font-style: normal;-->
-<!--		line-height: 1.4;-->
-<!--   }-->
-<!--	a:link {-->
-<!--		text-decoration: none;-->
-<!--	}-->
-<!--	a:visited {-->
-<!--		text-decoration: none;-->
-<!--	}-->
-<!--	a:hover {-->
-<!--		text-decoration: underline;-->
-<!--	}-->
-<!--	a:active {-->
-<!--		text-decoration: underline;-->
-<!--	}-->
-<!--	p{-->
-<!--		font-size:1.2em;-->
-<!--	}-->
-<!--	img {-->
-<!--		width:100%;-->
-<!--		max-width: 300px;-->
-<!--	}-->
-<!--	.rcorner{-->
-<!--		border-radius: 25px;-->
-<!--		border: 2px solid #8AC007;-->
-<!--		padding: 20px;-->
-<!--	}-->
-<!--	div{-->
-<!--		max-width:1200px;-->
-<!--		position:relative;-->
-<!--		font-family: Arial;-->
-<!--	}-->
-<!--	.bold{font-weight: bold;}-->
-<!--	.italic{font-style: italic;}-->
-<!--	.sz25{font-size:2.5em;}-->
-<!--	.sz20{font-size:2.0em;}-->
-<!--	.sz15{font-size:1.5em;}-->
-<!--	.sz13{font-size:1.3em;}-->
-<!--	.sz12{font-size:1.2em;}-->
-<!--	.sz10{font-size:1.0em;}-->
-<!--	.sz08{font-size:0.8em;}-->
-<!--	.inline{display:inline-block;}-->
-<!--	.no_margin{-->
-<!--		margin: 0 0;-->
-<!--	}-->
-<!--	.padding20{-->
-<!--		padding: 20px;-->
-<!--	}-->
-<!--	.halign{-->
-<!--		margin-left: auto;-->
-<!--		margin-right: auto;-->
-<!--	}-->
-<!--	.block_2-->
-<!--	{-->
-<!--		width:49%;-->
-<!--		max-width: 512px;-->
-<!--		display: inline-block;-->
-<!--		position: relative;-->
-<!--	}-->
-<!--	.block_5_2-->
-<!--	{-->
-<!--		width:40%;-->
-<!--		max-width: 410px;-->
-<!--		display: inline-block;-->
-<!--		position: relative;-->
-<!--	}-->
-<!--	.block_3-->
-<!--	{-->
-<!--		width:33%;-->
-<!--		max_width: 341px;-->
-<!--		display: inline-block;-->
-<!--		position: relative;-->
-<!--	}-->
-<!--	.block_1-->
-<!--	{-->
-<!--		width:100%;-->
-<!--		display: inline-block;-->
-<!--		/*position: relative;*/-->
-<!--		margin: 5px 5px;-->
-<!--		text-align: justify;-->
+	}
+	.block_N
+	{
+		display: inline-block;
+		position: relative;
+	}
+	.block_6
+	{
+		width:16%;
+		display: inline-block;
+		position: relative;
 
-<!--	}-->
-<!--	.block_N-->
-<!--	{-->
-<!--		display: inline-block;-->
-<!--		position: relative;-->
-<!--	}-->
-<!--	.block_6-->
-<!--	{-->
-<!--		width:16%;-->
-<!--		display: inline-block;-->
-<!--		position: relative;-->
+	}
 
-<!--	}-->
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
 
-<!--	img.header-img {-->
-<!--		height: 140px;-->
-<!--		border: 1px solid black;-->
-<!--		border-radius: 10px ;-->
-<!--		-moz-border-radius: 10px ;-->
-<!--		-webkit-border-radius: 10px ;-->
-<!--	}-->
+	img.rounded {
+		border: 0px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
 
-<!--	img.rounded {-->
-<!--		border: 0px solid #eeeeee;-->
-<!--		border-radius: 10px ;-->
-<!--		-moz-border-radius: 10px ;-->
-<!--		-webkit-border-radius: 10px ;-->
-<!--	}-->
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
 
-<!--	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */-->
-<!--		box-shadow:-->
-<!--		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */-->
-<!--		        5px 5px 0 0px #fff, /* The second layer */-->
-<!--		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */-->
-<!--		        10px 10px 0 0px #fff, /* The third layer */-->
-<!--		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */-->
-<!--		        15px 15px 0 0px #fff, /* The fourth layer */-->
-<!--		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */-->
-<!--		        20px 20px 0 0px #fff, /* The fifth layer */-->
-<!--		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */-->
-<!--		        25px 25px 0 0px #fff, /* The fifth layer */-->
-<!--		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */-->
-<!--		margin-left: 10px;-->
-<!--		margin-right: 45px;-->
-<!--	}-->
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
 
-<!--	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */-->
-<!--		box-shadow:-->
-<!--		        0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */-->
-
-<!--		margin-left: 10px;-->
-<!--		margin-right: 45px;-->
-<!--	}-->
+		margin-left: 10px;
+		margin-right: 45px;
+	}
 
 
-<!--	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */-->
-<!--		box-shadow:-->
-<!--		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */-->
-<!--		        5px 5px 0 0px #fff, /* The second layer */-->
-<!--		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */-->
-<!--		        10px 10px 0 0px #fff, /* The third layer */-->
-<!--		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */-->
-<!--		margin-top: 5px;-->
-<!--		margin-left: 10px;-->
-<!--		margin-right: 30px;-->
-<!--		margin-bottom: 5px;-->
-<!--	}-->
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
 
-<!--	.vert-cent {-->
-<!--		position: relative;-->
-<!--	    top: 50%;-->
-<!--	    transform: translateY(-50%);-->
-<!--	}-->
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
 
-<!--	.block_6_5-->
-<!--	{-->
-<!--		width:83%;-->
-<!--		display: inline-block;-->
-<!--		position: relative;-->
-<!--	}-->
+	.block_6_5
+	{
+		width:83%;
+		display: inline-block;
+		position: relative;
+	}
 
-<!--	</style>-->
-<!--	<title>-->
-<!--		Curriculum based Dropout Discriminator for Domain Adaptation-->
-<!--	</title>-->
-<!--	&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
-<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141788472-1"></script>-->
-<!--<script>-->
-<!--  window.dataLayer = window.dataLayer || [];-->
-<!--  function gtag(){dataLayer.push(arguments);}-->
-<!--  gtag('js', new Date());-->
+	.std{
+		border: 0.5px dashed black;
+		border-collapse: collapse;
+	}
+	td {
+		padding: 15px;
+	}
+		.link {
+			color: #222222;
+		}
 
-<!--  gtag('config', 'UA-141788472-1');-->
-<!--</script>-->
+	</style>
+	<title>
+		U-CAM
+	</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141788472-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!--</head>-->
-<!--<body data-gr-c-s-loaded="true">-->
+  gtag('config', 'UA-141788472-1');
+</script>
 
-<!--<div class="halign">-->
-<!--	<div style="float: left; width: 15%; padding: 1%;"><img src="http://home.iitk.ac.in/~vinodkk/idda_model/delta.png" height="150" width= "150" alt="sherlock"/></div>-->
-<!--	<div style="float: left; width: 65%;">-->
-<!--	<div class="block_1">-->
+</head>
+<body data-gr-c-s-loaded="true">
+<div class="container">
 
-<!--		<div class="block_1">-->
-<!--			<p class="sz20 bold no_margin" align="center">Curriculum based Dropout Discriminator for Domain Adaptation</p>-->
-<!--			<p align="center">-->
-<!--			</p><p class="no_margin" align="center"> <a href="http://home.iitk.ac.in/~vinodkk/">Vinod Kumar Kurmi</a><sup></sup> , <a href="#">Vipul Bajaj</a><sup></sup>, <a href="http://home.iitk.ac.in/~venkats/">Venkatesh K Subramanian</a>, <a href="https://www.cse.iitk.ac.in/users/vinaypn/">Vinay P. Namboodiri</a></p>-->
-<!--            &lt;!&ndash;<p class="no_margin" align="center">[* indicates equal contributions]</p>&ndash;&gt;-->
+<div style="margin-top: 20px">
+	<div style="float: left; width: 10%; margin-left: 5%"><a href="http://deltalab.iitk.ac.in/"><img src="static/delta.png" alt="Delta Lab"/></a></div>
+	<div style="float: left; width: 70%;">
+	<div class="block_1">
+
+		<div class="block_1">
+			<div align="center">
+				<p class="sz20 no_margin"><b>U-CAM</b>: Visual Explanation using Uncertainty based Class Activation Maps</p>
+			</div>
+			<p align="center">
+			</p><p class="no_margin bold" align="center"> <a class="link" href="http://home.iitk.ac.in/~badri/index.html">Badri N. Patro</a><sup></sup>, <a class="link" href="https://github.com/lunayach">Mayank Lunayach</a><sup></sup>, <a class="link" href="https://github.com/shivanshpatel35">Shivansh Patel</a>, <a class="link" href="https://www.cse.iitk.ac.in/users/vinaypn/">Vinay P. Namboodiri</a></p>
 <!--            <p  class="no_margin" align="center"><a href="http://deltalab.iitk.ac.in/">Delta Lab</a></p>-->
 <!--				<p class="no_margin" align="center"><a href="http://iitk.ac.in/">Indian Institute of Technology Kanpur</a></p>-->
-<!--				<p class="sz12 bold" align="center"><a href="#">[Paper]</a> <a href="https://arxiv.org/pdf/1907.10628.pdf-->
-<!--">[ArXiv]</a></a> <a href="https://github.com/DelTA-Lab-IITK/CD3A"> [Code]</a><a-->
+				<p class="sz12" align="center"><a class="link" href="#">[Paper]</a> <a class="link" href="">[ArXiv]</a></a> <a class="link" href="https://github.com/DelTA-Lab-IITK/U-CAM"> [Code]</a><a>
+			<p align="center">
+			</p>
+		</div>
+	</div>
+</div>
+	<div style="float: left; width: 10%;"><a href="https://www.iitk.ac.in/"><img src="static/iitk.png"  alt="sherlock"/></a></div>
+<!--<div class="halign">
+		<div class="block_1">
+			<div class="">
 
-<!--			<p align="center">-->
-<!--			</p>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
-<!--<div style="float: left; width: 15%; padding: 1%;"><img src="http://home.iitk.ac.in/~vinodkk/idda_model/iitk.png" height="150" width= "150" alt="sherlock"/></div>-->
+			</div>
+	</div>
+</div>-->
 
-<!--&lt;!&ndash;<div class="halign">-->
-<!--		<div class="block_1">-->
-<!--			<div class="">-->
-<!--							-->
-<!--			</div>-->
-<!--	</div>-->
-<!--</div>&ndash;&gt;-->
-
-<!--	<div class="block_1">-->
-<!--		<div class="">-->
-<!--			<p class="sz15 bold">Abstract</p>-->
+	<div class="block_1">
+		<div class="">
+			<br>
+			<hr>
+			<p class="sz15 bold">Abstract:</p>
+			<div class="thumbnail" style="float:right; margin-left: 20px" >
+					<img src="static/opening.png" alt="Lights" style="max-width:400px">
+					<div class="caption" style="max-width:400px">
+						<p>The figure shows the activation maps for baseline
+							and our models (A-GCA and P-GCA). In the first exaample, the baseline model had predicted the wrong answer and had
+							high uncertainty in prediction.
+							Our model gave a correct answer while also minimizing
+							the uncertainty (thus leading to an improved visual explanation).</p>
+					</div>
+			</div>
 <!--				<div class="padding20" style="float:right ">-->
-<!--					<img style="max-width:601px" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/Intro.png">-->
+<!--					<img  src="static/opening.png">-->
 
 <!--				</div>-->
-<!--				<p class="sz12">-->
+				<p class="sz12">
+					Understanding and explaining deep learning models is an imperative task. Towards this, we propose a method that obtains gradient-based certainty estimates that also provide visual attention maps. Particularly, we solve for <b>visual question answering</b> (<b>VQA</b>) task. We incorporate modern probabilistic deep learning methods that we further improve by using the gradients for these estimates. These have two-fold benefits:
+				</p>
+					<ul class="sz12">
+			<li> Improvement in obtaining the certainty estimates that correlate better with misclassified samples.</li>
+			<li> Improved attention maps that provide state-of-the-art results in terms of correlation with human attention regions. </li>
+					</ul>
+			<p class="sz12">
+					The improved attention maps result in consistent improvement for various methods for visual question answering. Therefore, the proposed technique can be thought of as a recipe for obtaining improved certainty estimates and explanation for deep learning models. We provide detailed empirical analysis for the visual question answering task on all standard benchmarks and comparison with state of the art methods.
+			</p>
+		</div>
+	</div>
 
-<!--				Domain adaptation is essential to enable wide usage of deep learning based networkstrained using large labeled datasets.  Adversarial learning based techniques have showntheir utility towards solving this problem using a discriminator that ensures source andtarget distributions are close.  However, here we suggest that rather than using a pointestimate, it would be useful if a distribution based discriminator could be used to bridgethis gap. This could be achieved using multiple classifiers or using traditional ensemblemethods.  In contrast, we suggest that a Monte Carlo dropout based ensemble discrim-inator could suffice to obtain the distribution based discriminator.  Specifically, we pro-pose a curriculum based dropout discriminator that gradually increases the variance ofthe sample based distribution and the corresponding reverse gradients are used to alignthe source and target feature representations. The detailed results and thorough ablationanalysis show that our model outperforms state-of-the-art results.-->
-<!--				</p>-->
-<!--		</div>-->
-<!--	</div>-->
+   <!--      <div class="block_1">
+                <div class="halign" style="float:right">
+                    <img style="max-width:601px" src="http://home.iitk.ac.in/~vinodkk/idda_model/idda_model.jpg">
+                </div>
+    </div>
+ -->
+	<p class="sz15 bold">
+		<br>
+		U-CAM Model:
+	</p>
+	<div class="thumbnail" style="float:right; margin-left: 20px" >
+		<img src="static/model.png" alt="Lights">
+		<hr>
+		<div class="caption">
+			<p>Illustration of model Gradient-based Certainty Attention Mask (<b>GCA</b>) and its certainty mask.
+				We obtain image feature and question feature using CNN and LSTM, respectively.
+				We then obtain attention mask using these features, and classification of the answer is done based on the attended feature.</p>
+		</div>
+	</div>
 
-<!--   &lt;!&ndash;      <div class="block_1">-->
-<!--                <div class="halign" style="float:right">-->
-<!--                    <img style="max-width:601px" src="http://home.iitk.ac.in/~vinodkk/idda_model/idda_model.jpg">-->
-<!--                </div>-->
-<!--    </div>-->
-<!-- &ndash;&gt;-->
+
+	<p class="sz15 bold">
+
+		Some example of visual explanations using our method:
+	</p>
 
 
-<!--	<div class="block_1" id="code">-->
-<!--			<div class="">-->
-<!--				<p class="sz15 bold">Code Coming Soon!</p>-->
-<!--			</div>-->
-<!--			-->
+	<div class="block_1" id="code">
+
+		<table>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td colspan="2" class="std">
+								<i>Q</i>: <b>  What is the man holding?  </b>
+							</td>
+						</tr>
+						<tr>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288603-7b1bbc00-53d7-11e9-9459-19da90311150.png" align="center"></td>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269813-87abf180-52bd-11e9-87c9-35aac68c0713.gif" align="center"></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td colspan="2" class="std">
+								<i>Q</i>: <b>  Which room is this?  </b>
+							</td>
+						</tr>
+						<tr>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288640-101eb500-53d8-11e9-8b48-fb0093ea3321.png" align="center"></td>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269810-7d89f300-52bd-11e9-88f1-ed9dc7da8a29.gif" align="center"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+<br>
+		<table>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td colspan="2" class="std">
+								<i>Q</i>: <b>What is behind the TV?</b>
+							</td>
+						</tr>
+						<tr>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288609-9a1a4e00-53d7-11e9-9961-a63de48f3b78.png" align="center"></td>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269793-62b77e80-52bd-11e9-8bb3-776bd8633484.gif" align="center"></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td colspan="2" class="std">
+								<i>Q</i>: <b> What is the girl eating? </b>
+							</td>
+						</tr>
+						<tr>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288646-2b89c000-53d8-11e9-8d7b-2e558307438b.png" align="center"></td>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269787-4fa4ae80-52bd-11e9-80ff-5863722072bb.gif" align="center"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td colspan="2" class="std">
+								<i>Q</i>: <b>  What fruit is in the bowl? </b>
+							</td>
+						</tr>
+						<tr>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288588-50c9fe80-53d7-11e9-9441-a57e7ffc85fc.png" align="center"></td>
+							<td class="std"> <img src="https://user-images.githubusercontent.com/48848404/55269778-38fe5780-52bd-11e9-9534-5fa6e0306dad.gif" align="center"></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td colspan="2" class="std">
+								<i>Q</i>: <b>  Which animals are they?  </b>
+							</td>
+						</tr>
+						<tr>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288656-4bb97f00-53d8-11e9-997b-1f11dd333b36.png" align="center"></td>
+							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269771-2ab03b80-52bd-11e9-91a8-55b25c0de68e.gif" align="center"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+
+
 
 <!--         		    <div align="center" style="margin-left:26%; text-align: center;">-->
 <!--         			<span style="float: left; max-width: 40%"><p>.</p>-->
@@ -256,32 +395,32 @@
 <!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/tsne.png">-->
 <!--          			</span>-->
 
-<!--    				</div>            -->
+<!--    				</div>-->
 
 <!--	</div>-->
 
 
 
 <!--	<div class="block_1" id="code">-->
-<!--			-->
+
 <!--			 		<div style="margin-left: 26%; text-align: center;">-->
 <!--         			<span style="float: left; max-width: 40%"><p>.</p>-->
 <!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/ad_proxy.png">-->
 <!--           			</span>-->
 
-<!--          -->
+
 
 <!--           			<span style="float: left; max-width: 40%">-->
 <!--         			<p>.</p>-->
 <!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/proxy_aw_new.png">-->
 <!--                	</span>-->
-<!--    				</div>            -->
+<!--    				</div>-->
 
 <!--	</div>-->
 
 
 <!--<div class="block_1" id="code">-->
-<!--			-->
+
 <!--			<div style="margin-left:26%;text-align: center;">-->
 <!--         			<span style="float: left; max-width: 40%"><p>.</p>-->
 <!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/ensemble.png">-->
@@ -294,18 +433,24 @@
 <!--           	</div>-->
 <!--	</div>-->
 
-<!--        <br><br><br>-->
+
+
+		<p class="sz15 bold">
+			<br>
+			More updates to the page coming soon...
+		</p>
+		<hr>
 
 <!--	<div class="block_1" id="code">-->
-<!--			-->
-<!--           		-->
+
+
 <!--             	&lt;!&ndash;<img style="" src="http://home.iitk.ac.in/~vinodkk/cada/attention_tsne.png">-->
-<!--          	-->
-<!--          		-->
+
+
 <!--          		<span  style="position: absolute; bottom: 200px; margin-left:10px;">Vinod Kumar Kurmi helloJau ho<br>hi and hello</span>-->
 <!--          		&ndash;&gt;-->
 
-<!--          	<center> -->
+<!--          	<center>-->
 <!--          	 <table width="600px" style="margin-left: %;">-->
 <!--          	 <tbody align="center"><tr>-->
 <!--				  <td><a target="_blank" href="https://arxiv.org/pdf/1907.10628.pdf"><img class="layered-paper-big" style="height:160px" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/0215.png"></a></td>-->
@@ -318,16 +463,16 @@
 <!--				  <span style="font-size:4pt"><a href="https://junyanz.github.io/BicycleGAN/"><br></a>-->
 <!--				  </span>-->
 <!--				  </td>-->
-<!--  	              -->
+
 <!--              </tr>-->
 <!--  		  </tbody>-->
-<!--  		  </table>	-->
+<!--  		  </table>-->
 <!--          </center>-->
-<!--          -->
+
 <!--	</div>-->
 
 
-<!--   -->
+
 <!--	<div class="block_1" id="data">-->
 <!--			<br>-->
 <!--	</div>-->
@@ -353,21 +498,22 @@
 <!--	</div>-->
 
 
-<!--</div>-->
-<!--&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
-<!--&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
-<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141358857-1"></script>-->
-<!--<script>-->
-<!--  window.dataLayer = window.dataLayer || [];-->
-<!--  function gtag(){dataLayer.push(arguments);}-->
-<!--  gtag('js', new Date());-->
+</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141358857-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!--  gtag('config', 'UA-141358857-1');-->
-<!--</script>-->
+  gtag('config', 'UA-141358857-1');
+</script>
 
 
-<!--<script type="text/javascript">-->
+<script type="text/javascript">
 
-<!--</script>-->
+</script>
 
-<!--</body></html>-->
+</body></html>
