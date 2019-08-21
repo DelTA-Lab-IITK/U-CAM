@@ -1,2 +1,2 @@
 # U-CAM 
- Visual Explanation using Uncertainty based Class Activation Maps ICCV
+ Visual Explanation using Uncertainty based Class Activation Maps
