@@ -8,7 +8,7 @@
  - For running the evaluation, pre-trained model is available [here](https://www.dropbox.com/s/3sc5rjw22h84zbp/2019-03-19_22%3A49%3A23.pth_9.pth?dl=0). 
 
 
-###References
+### References
  
  - https://github.com/Cyanogenoid/vqa-counting
 https://github.com/kyle-dorman/bayesian-neural-network-blogpost
